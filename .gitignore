@@ -1,0 +1,13 @@
+*.log
+node_modules/
+config.json
+config.yaml
+__*
+tsconfig.tsbuildinfo
+.cache/
+dist/
+*.pkl
+src/
+lib/
+.vscode/
+min/*.d.ts
