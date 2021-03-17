@@ -4,12 +4,10 @@ const path = require('path');
 const fs = require('fs');
 const yaml = require('js-yaml');
 // eslint-disable-next-line import/no-unresolved
-let Main = !fs.existsSync('../dist/main.js') ? require('../dist/main.js') : require('../min/main.js');
+require('../min/main.js');
 
 const config = yaml.load(fs.readFileSync(path.resolve(process.cwd(), 'config.yaml')));
-if (!Main) Main = global.Main;
-const App = new Main({ config });
-global.App = App;
+global.App = new global.Main({ config });
 
 process.stdin.setEncoding('utf8');
 process.stdin.on('data', async (input) => {

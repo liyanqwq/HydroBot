@@ -7,10 +7,10 @@
     "node": ">13.10"
   },
   "scripts": {
-    "build": "tsc",
-    "build:watch": "tsc --watch",
-    "debug": "node dist/hack && node --async-stack-traces --enable-source-maps --experimental-vm-modules --expose-gc --inspect --trace-deprecation --trace-warnings bin/robot.js",
-    "start": "node dist/hack && node --enable-source-maps --experimental-vm-modules --expose-gc bin/robot.js",
+    "build": "webpack-cli --config webpack.config.js",
+    "build:watch": "webpack-cli --config webpack.config.js --watch",
+    "debug": "node min/hack && node --async-stack-traces --enable-source-maps --experimental-vm-modules --expose-gc --inspect --trace-deprecation --trace-warnings bin/robot.js",
+    "start": "node min/hack && node --enable-source-maps --experimental-vm-modules --expose-gc bin/robot.js",
     "lint": "eslint bin src --ext ts,js --fix"
   },
   "repository": {
