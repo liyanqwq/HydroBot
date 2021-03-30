@@ -7,6 +7,7 @@
     "node": ">13.10"
   },
   "scripts": {
+    "tsc": "tsc -b",
     "build": "webpack-cli --config webpack.config.js",
     "build:watch": "webpack-cli --config webpack.config.js --watch",
     "debug": "node min/hack && node --async-stack-traces --enable-source-maps --experimental-vm-modules --expose-gc --inspect --trace-deprecation --trace-warnings bin/robot.js",
