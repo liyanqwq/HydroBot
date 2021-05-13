@@ -28,6 +28,8 @@
     "axios": "^0.21.1",
     "fs-extra": "^9.0.1",
     "js-yaml": "^3.14.1",
+    "koishi-plugin-gosen-choyen": "^1.0.4",
+    "koishi-plugin-mediawiki": "^0.0.4",
     "lodash": "^4.17.19",
     "moment": "^2.29.1",
     "mongodb": "^3.6.3",
