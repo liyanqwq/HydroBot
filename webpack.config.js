@@ -19,16 +19,20 @@ module.exports = {
     target: 'node',
     mode: 'production',
     resolve: {
-        extensions: ['.ts', '.js'],
+        extensions: ['.ts', '.js', '.tsx'],
     },
     module: {
         rules: [
-            { test: /\.ts$/, loader: 'ts-loader', options: { transpileOnly: true } },
+            { test: /\.tsx?$/, loader: 'ts-loader', options: { transpileOnly: true } },
             { test: /\.(js\.map|d\.ts)$/i, loader: 'ignore-loader' },
         ],
     },
     externals: [
         ({ request }, callback) => {
+            if (/^[@a-zA-Z0-9/_-]+/.test(request)) {
+                // 使用 request 路径，将一个 commonjs 模块外部化
+                return callback(null, `commonjs ${request}`);
+            }
             if (/^[@a-zA-Z0-9/_-]+/.test(request)) {
                 // 使用 request 路径，将一个 commonjs 模块外部化
                 return callback(null, `commonjs ${request}`);
@@ -39,5 +43,6 @@ module.exports = {
             }
             callback();
         },
+        { canvas: "commonjs canvas" }
     ],
 };

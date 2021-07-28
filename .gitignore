@@ -11,3 +11,5 @@ src/
 lib/
 .vscode/
 min/*.d.ts
+assets/arcaea/
+.tmp
