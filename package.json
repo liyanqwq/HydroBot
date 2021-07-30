@@ -30,6 +30,7 @@
     "canvas": "^2.8.0",
     "fs-extra": "^10.0.0",
     "googleapis": "^82.0.0",
+    "https-proxy-agent": "^5.0.0",
     "js-yaml": "^4.1.0",
     "jsdom": "^16.6.0",
     "koishi-plugin-gosen-choyen": "^1.0.4",
@@ -39,7 +40,7 @@
     "mongodb": "^4.0.1",
     "pngjs": "^6.0.0",
     "rss-feed-emitter": "^3.2.2",
-    "sharp": "^0.28.3",
+    "sharp": "0.27.2",
     "shell-escape": "^0.2.0",
     "superagent": "^6.1.0",
     "superagent-proxy": "^2.1.0"
