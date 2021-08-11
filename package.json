@@ -28,6 +28,7 @@
     "ansi_up": "^5.0.1",
     "axios": "^0.21.1",
     "canvas": "^2.8.0",
+    "echarts": "^5.1.2",
     "fs-extra": "^10.0.0",
     "googleapis": "^82.0.0",
     "https-proxy-agent": "^5.0.0",
