@@ -41,6 +41,7 @@
     "mongodb": "^3",
     "pngjs": "^6.0.0",
     "rss-feed-emitter": "^3.2.2",
+    "scribbletune": "^4.1.1",
     "sharp": "0.27.2",
     "shell-escape": "^0.2.0",
     "superagent": "^6.1.0",
